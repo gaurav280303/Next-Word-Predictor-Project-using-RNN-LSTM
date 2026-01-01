@@ -1,154 +1,95 @@
-# Next-Word-Predictor-Project-using-RNN and LSTM
-This is a deep learning project  which will  predict next words  using RNN &amp; LSTM model
-
-🧠 NextWord Prediction – LSTM & RNN Based Language Model
-🔹 A Deep Learning–based language prediction system built using LSTM & RNN architectures
+🧠 NextWord Prediction
+LSTM & RNN Based Language Model
 
 Developed by: Gaurav Singh
 
 📌 Project Overview
 
-NextWord Prediction is a deep learning–based Natural Language Processing (NLP) project that predicts the next word in a sentence based on the context provided by the user.
+NextWord Prediction is a deep learning–based Natural Language Processing (NLP) project that predicts the next word in a sentence using Recurrent Neural Networks (RNN) and Long Short-Term Memory (LSTM) architecture.
 
-The goal of this project is to understand how sequential data works in real-world language modeling and to implement a complete end-to-end deep learning pipeline, from preprocessing text data to deploying a working web application.
+The goal of this project is to understand how language models learn sequential patterns and how context influences predictions. It demonstrates an end-to-end workflow — from data preprocessing and model training to deployment through an interactive web interface.
 
-This project is not just about prediction — it is about understanding how machines learn language patterns over time.
+🎯 Why This Project?
 
-🎯 Why I Built This Project
+This project was built to:
 
-I built this project to:
+Understand how sequence-based neural networks work internally
 
-Gain a deep understanding of sequence-based models (RNN & LSTM)
+Learn the difference between traditional ML and deep learning models
 
-Learn how language context is captured over time
+Gain hands-on experience in training, evaluating, and deploying a deep learning model
 
-Move beyond traditional ML into Deep Learning
+Explore the challenges involved in working with limited data and compute resources
 
-Understand why deep learning models take longer to train and how they differ from classical ML models
+It reflects a practical approach to learning deep learning rather than relying only on theory.
 
-Learn how to deploy a trained DL model using Streamlit
+⚙️ How It Works
 
-This project helped me bridge the gap between theoretical NLP concepts and real-world implementation.
+User inputs a sentence
 
-🧩 Problem Statement
+Text is tokenized and converted into numerical sequences
 
-Traditional machine learning models fail to understand sequential dependency in language.
+Sequences are padded to a fixed length
 
-For example:
+An LSTM-based model predicts the most probable next word
 
-“Machine learning models are very ___”
+The prediction is displayed in real time using Streamlit
 
-The next word depends on previous words, not just frequency.
+🧠 Model & Training Details
 
-This project solves that by using:
+Model Type: LSTM (Recurrent Neural Network)
 
-Recurrent Neural Networks (RNN)
+Training Data: ~30,000 text sequences
 
-Long Short-Term Memory (LSTM) architecture
+Training Time: ~3 hours (local machine)
 
-which can remember long-term dependencies in text data.
+Hardware: No GPU acceleration used
 
-⚙️ How the System Works
-1️⃣ Data Preparation
+Objective: Learn contextual word relationships
 
-Text data is cleaned and tokenized
-
-Converted into numerical sequences using Keras Tokenizer
-
-Sequences are padded to maintain uniform input length
-
-2️⃣ Model Architecture
-
-The model uses:
-
-Embedding Layer
-
-LSTM Layer (for sequence learning)
-
-Dense Output Layer (for word prediction)
-
-This allows the model to learn relationships between words over time.
-
-3️⃣ Model Training
-
-Training took ~3 hours on local hardware
-
-Deep learning models require significant computation compared to traditional ML models
-
-This highlights the difference between ML and DL in real-world use
-
-4️⃣ Prediction Logic
-
-User enters a sentence
-
-The model predicts the most probable next word
-
-Output is shown instantly on the interface
+This highlights the computational intensity of deep learning models and explains why large organizations rely on high-performance GPUs and distributed systems.
 
 🚀 Live Demo
 
-🔗 Try the app here:
-👉 https://next-word-predictor-project-using-rnn-lstm-tghz6kebdembjebmxtf.streamlit.app/
+👉 Try the application here:
+https://next-word-predictor-project-using-rnn-lstm-tghz6kebdembjebmxtf.streamlit.app/
 
-🧪 Tech Stack Used
-Category	Technology
-Language	Python
+⚙️ Tech Stack
+Category	Tools Used
+Programming Language	Python
 Deep Learning	TensorFlow, Keras
-Model Type	LSTM (Recurrent Neural Network)
+Model Architecture	LSTM (RNN)
 Frontend	Streamlit
-Deployment	Streamlit Cloud
 Data Processing	NumPy
-Model Storage	.h5 format
-Tokenization	Keras Tokenizer
-🗂 Project Structure
+Model Storage	.h5, .pkl
+⚠️ Limitations
+
+Trained on a relatively small dataset
+
+Limited vocabulary and contextual understanding
+
+Not comparable to large-scale models like ChatGPT or Google Search
+
+Built primarily for learning and experimentation
+
+📁 Project Structure
 nextword-prediction/
-│
-├── app.py                  # Streamlit application
-├── lstm_model (1).h5       # Trained LSTM model
-├── tokenizer.pkl           # Tokenizer used during training
-├── max_len.pkl             # Maximum sequence length
-├── requirements.txt        # Project dependencies
-└── README.md               # Project documentation
+│── app.py
+│── lstm_model (1).h5
+│── tokenizer.pkl
+│── max_len.pkl
+│── requirements.txt
+│── README.md
 
-🧠 Key Learnings from This Project
-
-Deep learning models require significant computation and tuning
-
-Sequence modeling is fundamentally different from traditional ML
-
-LSTMs handle long-term dependencies better than vanilla RNNs
-
-Deployment is as important as model training
-
-Clean UI + clean code = professional project
-
-📌 Future Improvements
-
-Add beam search for better predictions
-
-Add probability/confidence scores
-
-Improve dataset size for better generalization
-
-Add word suggestions instead of single word output
-
-Optimize model size for faster inference
-
-🙋‍♂️ About Me
+👨‍💻 About the Developer
 
 Gaurav Singh
-Aspiring Data Scientist & AI Engineer
+Aspiring Data Scientist & AI Enthusiast
 
-I enjoy building intelligent systems that combine machine learning, deep learning, and real-world problem solving. This project represents my journey into NLP and sequence modeling.
+Interested in building intelligent systems, understanding model behavior, and applying machine learning to real-world problems.
 
 ⭐ Final Note
 
-This project reflects:
+This project reflects my learning journey in deep learning and NLP, focusing on clarity, practical understanding, and real-world deployment rather than scale.
 
-Practical implementation
-
-Deep learning understanding
-
-End-to-end system thinking
-
-If you find this project useful, feel free to ⭐ the repository.
+Feedback and suggestions are always welcome.
